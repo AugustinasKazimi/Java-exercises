@@ -1,0 +1,303 @@
+public class Main {
+    public static void main(String[] args) {
+
+        /***
+         * Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
+         * "Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".
+         */
+
+//        String name = "Augustinas";
+//        String famname = "Kazimirenas";
+//        int present = 2022;
+//        int birth = 1998;
+//        System.out.println("My name is " + name + " " + famname + "." + " " + "I am " + (present - birth) + " years old" + ".");
+
+
+        /***
+         * Naudokite funkcija Math.random(). Sukurkite du kintamuosius ir naudodamiesi funkcija Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės. Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
+         */
+
+
+//        int firstint = (int) (Math.random() * 10);
+//        int secondint = (int) (Math.random() * 10);
+//
+//        System.out.println(firstint);
+//        System.out.println(secondint);
+//
+//        if((firstint == 0) || (secondint == 0)){
+//            System.out.println("Dalyba is 0 negalima");
+//        }
+//        else if(firstint == secondint){
+//            System.out.println("skaiciai yra lygūs");
+//        }
+//        else if(firstint > secondint){
+//            System.out.println("pirmo atsakymas" + " "  + (double) Math.round( ((double) firstint /(double) secondint) * 100) / 100);
+//        }
+//        else {
+//            System.out.println("antro atsakymas" + " " + (double) Math.round(  ((double) secondint / (double)firstint) * 100) / 100);
+//        }
+
+        /***
+         * Naudokite funkcija Math.random(). Sukurkite tris kintamuosius ir naudodamiesi funkcija Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.
+         */
+
+//        int firstint = (int) (Math.random() * 25);
+//        int secondint = (int) (Math.random() * 25);
+//        int thirdint = (int) (Math.random() * 25);
+//
+//        System.out.println(firstint);
+//        System.out.println(secondint);
+//        System.out.println(thirdint);
+//
+//        if((firstint > secondint) && (firstint < thirdint)){
+//        System.out.println("Vidurinysis skaicius yra pirmo kintamojo skaicius " + firstint);
+//        }
+//        else if((firstint < secondint) && (firstint > thirdint)){
+//            System.out.println("Vidurinysis skaicius yra pirmo kintamojo skaicius " + firint);
+//        }
+//        else if((firstint < secondint) && (secondint < thirdint)){
+//            System.out.println("Vidurinysis skaicius yra antro kintamojo skaicius " + secint);
+//        }
+//        else if((firstint > secondint) && (secondint > thirdint)){
+//            System.out.println("Vidurinysis skaicius yra antro kintamojo skaicius " + secint);
+//        }
+//        else if((firstint < thirdint) && (thirdint < secondint)){
+//            System.out.println("Vidurinysis skaicius yra trecio kintamojo skaicius " + thirdint);
+//        }
+//        else if((firstint > thirdint) && (thirdint > secondint)){
+//            System.out.println("Vidurinysis skaicius yra trecio kintamojo skaicius " + thirdint);
+//        }
+//        else if((firstint == secondint) || (firstint == thirdint) || (secondint == thirdint)){
+//            System.out.println("Intervalas susideda tik is 2 skaiciu");
+//        }
+
+        /***
+         * Įvedami skaičiai -a, b, c –kraštinių ilgiai, trys kintamieji (naudojame int) (naudokite ​Math.random()​ funkcija nuo 1 iki 10). Parašykite Java programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų.
+         */
+//
+//        int a = (int) ( 1 + Math.round( Math.random() * (10 - 1) + 1));
+//        int b = (int) ( 1 + Math.round( Math.random() * (10 - 1) + 1));
+//        int c = (int) ( 1 + Math.round( Math.random() * (10 - 1) + 1));
+//
+//        System.out.println(a);
+//        System.out.println(b);
+//        System.out.println(c);
+//
+//        if((a < (b + c)) && (b < (c + a)) && (c < (a + b))){
+//            System.out.println("Possible to make a triangle");
+//        }
+//        else{
+//            System.out.println("Impossible to make a triangle");
+//        }
+
+        /***
+         * Sukurkite keturis kintamuosius ir ​Math.random()​ funkcija sugeneruokite jiems reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti).
+         */
+//
+//        int a = (int) (Math.round( Math.random() * 2));
+//        int b = (int) (Math.round( Math.random() * 2));
+//        int c = (int) (Math.round( Math.random() * 2));
+//        int d = (int) (Math.round( Math.random() * 2));
+//        int zero = 0;
+//        int one = 0;
+//        int two = 0;
+//
+//        System.out.println(a);
+//        System.out.println(b);
+//        System.out.println(c);
+//        System.out.println(d);
+//
+//        if( a == 0){
+//            zero++;
+//        }
+//        if( b == 0){
+//            zero++;
+//        }
+//        if( c == 0){
+//            zero++;
+//        }
+//        if( d == 0){
+//            zero++;
+//        }
+//        if( a == 1){
+//            one++;
+//        }
+//        if( b == 1){
+//            one++;
+//        }
+//        if( c == 1){
+//            one++;
+//        }
+//        if( d == 1){
+//            one++;
+//        }
+//        if( a == 2){
+//            two++;
+//        }
+//        if( b == 2){
+//            two++;
+//        }
+//        if( c == 2){
+//            two++;
+//        }
+//        if( d == 2){
+//            two++;
+//        }
+//        System.out.println("there are/is " + zero + " " + "zero(s)" + " " + one + " " + "one(s) and" + " " + two + " " + "two(s)");
+
+
+        /***
+         * Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0 turi būti  laužtiniuose skliaustuose [], 0 -  (), didesni už 0 {}.
+         */
+//
+//        int a = (int) (-10 + Math.round(Math.random() * (10 - (-10) + 1)));
+//        int b = (int) (-10 + Math.round(Math.random() * (10 - (-10) + 1)));
+//        int c = (int) (-10 + Math.round(Math.random() * (10 - (-10) + 1)));
+//
+//        System.out.println(a);
+//        System.out.println(b);
+//        System.out.println(c);
+//
+//        if((a < 0) && (b < 0) && (c < 0)){
+//            System.out.println("[" + a + "]" + "[" + b + "]" + "[" + c + "]");
+//        }
+//        else if((a < 0) && (b < 0) && (c == 0)){
+//            System.out.println("[" + a + "]" + "[" + b + "]" + "(" + c + ")");
+//        }
+//        else if((a < 0) && (b < 0) && (c > 0)){
+//            System.out.println("[" + a + "]" + "[" + b + "]" + "{" + c + "}");
+//        }
+//        else if((a < 0) && (b == 0) && (c < 0)){
+//            System.out.println("[" + a + "]" + "(" + b + ")" + "[" + c + "]");
+//        }
+//        else if((a < 0) && (b == 0) && (c == 0)){
+//            System.out.println("[" + a + "]" + "(" + b + ")" + "(" + c + ")");
+//        }
+//        else if((a < 0) && (b == 0) && (c > 0)){
+//            System.out.println("[" + a + "]" + "(" + b + ")" + "{" + c + "}");
+//        }
+//        else if((a < 0) && (b == 0) && (c > 0)){
+//            System.out.println("[" + a + "]" + "(" + b + ")" + "{" + c + "}");
+//        }
+//        else if((a < 0) && (b > 0) && (c < 0)){
+//            System.out.println("[" + a + "]" + "{" + b + "}" + "[" + c + "]");
+//        }
+//        else if((a < 0) && (b > 0) && (c > 0)){
+//            System.out.println("[" + a + "]" + "{" + b + "}" + "{" + c + "}");
+//        }
+//        else if((a == 0) && (b < 0) && (c < 0)){
+//            System.out.println("(" + a + ")" + "[" + b + "]" + "[" + c + "]");
+//        }
+//        else if((a == 0) && (b < 0) && (c == 0)){
+//            System.out.println("(" + a + ")" + "[" + b + "]" + "(" + c + ")");
+//        }
+//        else if((a == 0) && (b < 0) && (c > 0)){
+//            System.out.println("(" + a + ")" + "[" + b + "]" + "{" + c + "}");
+//        }
+//        else if((a == 0) && (b == 0) && (c < 0)){
+//            System.out.println("(" + a + ")" + "(" + b + ")" + "[" + c + "]");
+//        }
+//        else if((a == 0) && (b == 0) && (c == 0)){
+//            System.out.println("(" + a + ")" + "(" + b + ")" + "(" + c + ")");
+//        }
+//        else if((a == 0) && (b == 0) && (c > 0)){
+//            System.out.println("(" + a + ")" + "(" + b + ")" + "{" + c + "}");
+//        }
+//        else if((a == 0) && (b > 0) && (c < 0)){
+//            System.out.println("(" + a + ")" + "{" + b + "}" + "[" + c + "]");
+//        }
+//        else if((a == 0) && (b > 0) && (c == 0)){
+//            System.out.println("(" + a + ")" + "{" + b + "}" + "(" + c + ")");
+//        }
+//        else if((a == 0) && (b > 0) && (c > 0)){
+//            System.out.println("(" + a + ")" + "{" + b + "}" + "{" + c + "}");
+//        }
+//        else if((a > 0) && (b < 0) && (c < 0)){
+//            System.out.println("{" + a + "}" + "[" + b + "]" + "[" + c + "]");
+//        }
+//        else if((a > 0) && (b < 0) && (c == 0)){
+//            System.out.println("{" + a + "}" + "[" + b + "]" + "(" + c + ")");
+//        }
+//        else if((a > 0) && (b < 0) && (c > 0)){
+//            System.out.println("{" + a + "}" + "[" + b + "]" + "{" + c + "}");
+//        }
+//        else if((a > 0) && (b == 0) && (c < 0)){
+//            System.out.println("{" + a + "}" + "(" + b + ")" + "[" + c + "]");
+//        }
+//        else if((a > 0) && (b == 0) && (c == 0)){
+//            System.out.println("{" + a + "}" + "(" + b + ")" + "(" + c + ")");
+//        }
+//        else if((a > 0) && (b == 0) && (c > 0)){
+//            System.out.println("{" + a + "}" + "(" + b + ")" + "{" + c + "}");
+//        }
+//        else if((a > 0) && (b > 0) && (c < 0)){
+//            System.out.println("{" + a + "}" + "{" + b + "}" + "[" + c + "]");
+//        }
+//        else if((a > 0) && (b > 0) && (c == 0)){
+//            System.out.println("{" + a + "}" + "{" + b + "}" + "(" + c + ")");
+//        }
+//        else if((a > 0) && (b > 0) && (c > 0)){
+//            System.out.println("{" + a + "}" + "{" + b + "}" + "{" + c + "}");
+//        }
+
+        /***
+         * Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.
+         */
+
+//
+//        int candle = (int) (5 + Math.round(Math.random() * ((3000 - 5) + 1)));
+//
+//        System.out.println(candle);
+//
+//        if(candle <= 1000){
+//            System.out.println("Cost of candles is " + (candle));
+//        }
+//        else if((candle > 1000) && (candle <= 2000)){
+//           double threeper = candle * 0.97;
+//            System.out.println("Cost of candles is " + (double) Math.round( ((double) threeper ) * 100) / 100 );
+//        }
+//        else if(candle > 2000){
+//            double forper = candle * 0.96;
+//            System.out.println("Cost of candles is " + (double) Math.round( ((double) forper ) * 100) / 100 );
+//        }
+
+
+        /***
+         * Naudokite funkcija Math.random(). Sukurkite tris kintamuosius su atsitiktinėm reikšmėm nuo 0 iki 100. Paskaičiuokite jų aritmetinį vidurkį. Ir aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba didesnės nei 90. Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus.
+         */
+//
+//        int a = (int) (Math.round( Math.random() * 100));
+//        int b = (int) (Math.round( Math.random() * 100));
+//        int c = (int) (Math.round( Math.random() * 100));
+//        int d = 3;
+//
+//        System.out.println(a);
+//        System.out.println(b);
+//        System.out.println(c);
+//
+//        int aritmean = (a + b + c ) / d;
+//
+//        System.out.println("first aritmetical mean is" + " " + (aritvidur));
+//
+//
+//        if (a < 10 || a > 90){
+//            a = 0;
+//            d--;
+//        }
+//        if( b < 10 || b > 90){
+//            b = 0;
+//            d--;
+//        }
+//        if(c < 10 || c > 90){
+//            c = 0;
+//            d--;
+//        }
+//        if(d == 0){
+//            System.out.println("All numbers are less than 10 or more than 90");
+//        }
+//        else{
+//            System.out.println("second aritmetical mean is " + ((a + b + c ) / d));
+//        }
+//
+    }
+}
