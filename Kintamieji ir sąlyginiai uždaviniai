@@ -150,95 +150,46 @@ public class Main {
          * Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0 turi būti  laužtiniuose skliaustuose [], 0 -  (), didesni už 0 {}.
          */
 //
-//        int a = (int) (-10 + Math.round(Math.random() * (10 - (-10) + 1)));
-//        int b = (int) (-10 + Math.round(Math.random() * (10 - (-10) + 1)));
-//        int c = (int) (-10 + Math.round(Math.random() * (10 - (-10) + 1)));
-//
-//        System.out.println(a);
-//        System.out.println(b);
-//        System.out.println(c);
-//
-//        if((a < 0) && (b < 0) && (c < 0)){
-//            System.out.println("[" + a + "]" + "[" + b + "]" + "[" + c + "]");
-//        }
-//        else if((a < 0) && (b < 0) && (c == 0)){
-//            System.out.println("[" + a + "]" + "[" + b + "]" + "(" + c + ")");
-//        }
-//        else if((a < 0) && (b < 0) && (c > 0)){
-//            System.out.println("[" + a + "]" + "[" + b + "]" + "{" + c + "}");
-//        }
-//        else if((a < 0) && (b == 0) && (c < 0)){
-//            System.out.println("[" + a + "]" + "(" + b + ")" + "[" + c + "]");
-//        }
-//        else if((a < 0) && (b == 0) && (c == 0)){
-//            System.out.println("[" + a + "]" + "(" + b + ")" + "(" + c + ")");
-//        }
-//        else if((a < 0) && (b == 0) && (c > 0)){
-//            System.out.println("[" + a + "]" + "(" + b + ")" + "{" + c + "}");
-//        }
-//        else if((a < 0) && (b == 0) && (c > 0)){
-//            System.out.println("[" + a + "]" + "(" + b + ")" + "{" + c + "}");
-//        }
-//        else if((a < 0) && (b > 0) && (c < 0)){
-//            System.out.println("[" + a + "]" + "{" + b + "}" + "[" + c + "]");
-//        }
-//        else if((a < 0) && (b > 0) && (c > 0)){
-//            System.out.println("[" + a + "]" + "{" + b + "}" + "{" + c + "}");
-//        }
-//        else if((a == 0) && (b < 0) && (c < 0)){
-//            System.out.println("(" + a + ")" + "[" + b + "]" + "[" + c + "]");
-//        }
-//        else if((a == 0) && (b < 0) && (c == 0)){
-//            System.out.println("(" + a + ")" + "[" + b + "]" + "(" + c + ")");
-//        }
-//        else if((a == 0) && (b < 0) && (c > 0)){
-//            System.out.println("(" + a + ")" + "[" + b + "]" + "{" + c + "}");
-//        }
-//        else if((a == 0) && (b == 0) && (c < 0)){
-//            System.out.println("(" + a + ")" + "(" + b + ")" + "[" + c + "]");
-//        }
-//        else if((a == 0) && (b == 0) && (c == 0)){
-//            System.out.println("(" + a + ")" + "(" + b + ")" + "(" + c + ")");
-//        }
-//        else if((a == 0) && (b == 0) && (c > 0)){
-//            System.out.println("(" + a + ")" + "(" + b + ")" + "{" + c + "}");
-//        }
-//        else if((a == 0) && (b > 0) && (c < 0)){
-//            System.out.println("(" + a + ")" + "{" + b + "}" + "[" + c + "]");
-//        }
-//        else if((a == 0) && (b > 0) && (c == 0)){
-//            System.out.println("(" + a + ")" + "{" + b + "}" + "(" + c + ")");
-//        }
-//        else if((a == 0) && (b > 0) && (c > 0)){
-//            System.out.println("(" + a + ")" + "{" + b + "}" + "{" + c + "}");
-//        }
-//        else if((a > 0) && (b < 0) && (c < 0)){
-//            System.out.println("{" + a + "}" + "[" + b + "]" + "[" + c + "]");
-//        }
-//        else if((a > 0) && (b < 0) && (c == 0)){
-//            System.out.println("{" + a + "}" + "[" + b + "]" + "(" + c + ")");
-//        }
-//        else if((a > 0) && (b < 0) && (c > 0)){
-//            System.out.println("{" + a + "}" + "[" + b + "]" + "{" + c + "}");
-//        }
-//        else if((a > 0) && (b == 0) && (c < 0)){
-//            System.out.println("{" + a + "}" + "(" + b + ")" + "[" + c + "]");
-//        }
-//        else if((a > 0) && (b == 0) && (c == 0)){
-//            System.out.println("{" + a + "}" + "(" + b + ")" + "(" + c + ")");
-//        }
-//        else if((a > 0) && (b == 0) && (c > 0)){
-//            System.out.println("{" + a + "}" + "(" + b + ")" + "{" + c + "}");
-//        }
-//        else if((a > 0) && (b > 0) && (c < 0)){
-//            System.out.println("{" + a + "}" + "{" + b + "}" + "[" + c + "]");
-//        }
-//        else if((a > 0) && (b > 0) && (c == 0)){
-//            System.out.println("{" + a + "}" + "{" + b + "}" + "(" + c + ")");
-//        }
-//        else if((a > 0) && (b > 0) && (c > 0)){
-//            System.out.println("{" + a + "}" + "{" + b + "}" + "{" + c + "}");
-//        }
+//        int a = (int) (-10 + Math.random() * (10 + 10)); //-10 +10
+        int b = (int) (-10 + Math.random() * (10 + 10)); //-10 +10
+        int c = (int) (-10 + Math.random() * (10 + 10)); //-10 +10
+
+        if (a > 0) {
+            System.out.println("{" + a + "}");
+        }
+
+        if (a < 0) {
+            System.out.println("[" + a + "]");
+        }
+
+        if (a == 0) {
+            System.out.println("(" + a + ")");
+        }
+
+
+        if (b > 0) {
+            System.out.println("{" + b + "}");
+        }
+
+        if (b < 0) {
+            System.out.println("[" + b + "]");
+        }
+
+        if (b == 0) {
+            System.out.println("(" + b + ")");
+        }
+
+        if (c > 0) {
+            System.out.println("{" + c + "}");
+        }
+
+        if (c < 0) {
+            System.out.println("[" + c + "]");
+        }
+
+        if (c == 0) {
+            System.out.println("(" + c + ")");
+        }
 
         /***
          * Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.
