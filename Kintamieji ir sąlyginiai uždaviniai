@@ -203,11 +203,11 @@ public class Main {
 //        if(candle <= 1000){
 //            System.out.println("Cost of candles is " + (candle));
 //        }
-//        else if((candle > 1000) && (candle <= 2000)){
+//        if((candle > 1000) && (candle <= 2000)){
 //           double threeper = candle * 0.97;
 //            System.out.println("Cost of candles is " + (double) Math.round( ((double) threeper ) * 100) / 100 );
 //        }
-//        else if(candle > 2000){
+//        if(candle > 2000){
 //            double forper = candle * 0.96;
 //            System.out.println("Cost of candles is " + (double) Math.round( ((double) forper ) * 100) / 100 );
 //        }
