@@ -1,0 +1,8 @@
+         /***
+         * Stringe, kurį generuoja toks kodas: ""Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope" Surasti ir atspausdinti epizodo numerį.
+         */
+
+       String txt = "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope";
+       System.out.println(txt);
+
+       System.out.println(txt.substring(txt.length() - 14, txt.length() - 13));
