@@ -2,7 +2,8 @@ public class Main {
     public static void main(String[] args) {
 
         /***
-         * Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
+         * Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). 
+         * Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
          * "Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".
          */
 
@@ -14,7 +15,9 @@ public class Main {
 
 
         /***
-         * Naudokite funkcija Math.random(). Sukurkite du kintamuosius ir naudodamiesi funkcija Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės. Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
+         * Naudokite funkcija Math.random(). Sukurkite du kintamuosius ir naudodamiesi funkcija Math.random() 
+         * jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės. 
+         * Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
          */
 
 
@@ -38,7 +41,8 @@ public class Main {
 //        }
 
         /***
-         * Naudokite funkcija Math.random(). Sukurkite tris kintamuosius ir naudodamiesi funkcija Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.
+         * Naudokite funkcija Math.random(). Sukurkite tris kintamuosius ir naudodamiesi funkcija 
+         * Math.random() jiems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.
          */
 
 //        int firstint = (int) (Math.random() * 25);
@@ -72,7 +76,8 @@ public class Main {
 //        }
 
         /***
-         * Įvedami skaičiai -a, b, c –kraštinių ilgiai, trys kintamieji (naudojame int) (naudokite ​Math.random()​ funkcija nuo 1 iki 10). Parašykite Java programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų.
+         * Įvedami skaičiai -a, b, c –kraštinių ilgiai, trys kintamieji (naudojame int) (naudokite ​Math.random()​ 
+         * funkcija nuo 1 iki 10). Parašykite Java programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų.
          */
 //
 //        int a = (int) ( 1 + Math.round( Math.random() * (10 - 1) + 1));
@@ -91,7 +96,8 @@ public class Main {
 //        }
 
         /***
-         * Sukurkite keturis kintamuosius ir ​Math.random()​ funkcija sugeneruokite jiems reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti).
+         * Sukurkite keturis kintamuosius ir ​Math.random()​ funkcija sugeneruokite jiems reikšmes nuo 0 iki 2. 
+         * Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti).
          */
 //
 //        int a = (int) (Math.round( Math.random() * 2));
@@ -147,7 +153,8 @@ public class Main {
 
 
         /***
-         * Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0 turi būti  laužtiniuose skliaustuose [], 0 -  (), didesni už 0 {}.
+         * Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0 turi būti  
+         * laužtiniuose skliaustuose [], 0 -  (), didesni už 0 {}.
          */
 //
 //        int a = (int) (-10 + Math.random() * (10 + 10)); //-10 +10
@@ -192,7 +199,9 @@ public class Main {
         }
 
         /***
-         * Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.
+         * Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. 
+         * Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. 
+         * Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.
          */
 
 //
@@ -214,7 +223,9 @@ public class Main {
 
 
         /***
-         * Naudokite funkcija Math.random(). Sukurkite tris kintamuosius su atsitiktinėm reikšmėm nuo 0 iki 100. Paskaičiuokite jų aritmetinį vidurkį. Ir aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba didesnės nei 90. Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus.
+         * Naudokite funkcija Math.random(). Sukurkite tris kintamuosius su atsitiktinėm reikšmėm nuo 0 iki 100. 
+         * Paskaičiuokite jų aritmetinį vidurkį. Ir aritmetinį vidurkį atmetus tas reikšmes, kurios yra mažesnės nei 10 arba didesnės nei 90. 
+         * Abu vidurkius atspausdinkite. Rezultatus apvalinkite iki sveiko skaičiaus.
          */
 //
 //        int a = (int) (Math.round( Math.random() * 100));
