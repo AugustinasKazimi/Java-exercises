@@ -99,5 +99,47 @@ public class Main {
 //                System.out.println("S");
 //            }
 //        }
+
+        /***
+         * Kazys ir Petras žaidžia šaškėm. Petras surenka taškų kiekį nuo 10 iki 20, Kazys surenka taškų kiekį nuo 5 iki 25.
+         * Vienoje eilutėje išvesti žaidėjų vardus su taškų kiekiu ir “Partiją laimėjo: ​laimėtojo vardas​”. Taškų kiekį
+         * generuokite funkcija ​Math.random()​. Žaidimą laimi tas, kas greičiau surenka 222 taškus. Partijas kartoti tol, kol
+         * kažkuris žaidėjas pirmas surenka 222 arba daugiau taškų.
+         */
+
+
+        int totalpetraspoints = 0;
+        int totalkazyspoints = 0;
+
+
+        while (totalkazyspoints <= 222) {
+            int petraspoints = (int) (10 + Math.round(Math.random() * ((20 - 10) + 1)));
+            int kazyspoints = (int) (5 + Math.round(Math.random() * ((25 - 5) + 1)));
+
+            System.out.println(kazyspoints);
+            System.out.println(petraspoints);
+
+            if (petraspoints > kazyspoints) {
+                totalpetraspoints = totalpetraspoints + petraspoints;
+                totalkazyspoints = totalkazyspoints + kazyspoints;
+                System.out.println("partija laimejo Petras. " + "\nViso Kazio tasku: " + totalkazyspoints + " " + "||" + "Viso Petro tasku: " + totalpetraspoints);
+                System.out.println();
+            }
+            if (kazyspoints > petraspoints) {
+                totalkazyspoints = totalkazyspoints + kazyspoints;
+                totalpetraspoints = totalpetraspoints + petraspoints;
+                System.out.println("partija laimejo Kazys. " + "\nViso Kazio tasku: " + totalkazyspoints + " " + "||" + "Viso Petro tasku: " + totalpetraspoints);
+                System.out.println();
+            }
+            if (kazyspoints == petraspoints) {
+                System.out.println("Partijos nelaimejo niekas" + "\nViso Kazio tasku: " + totalkazyspoints + " " + "||" + "Viso Petro tasku: " + totalpetraspoints);
+                System.out.println();
+            }
+            if (totalpetraspoints >= 222) {
+                System.out.println("Nugaletojas Petras");
+                break;
+            }
+            System.out.println("Nugaletojas Kazys");
+        }
     }
 }
