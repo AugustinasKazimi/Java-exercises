@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(greeting("labas"));
+    }
+
+    public static String greeting(String hi) {
+
+        /***
+         * Parašykite funkciją, kurios argumentas būtų tekstas, kuris būtų atspausdinamas konsolėje pridedant “---” pradžioje ir gale. PVZ (---labas---)
+         */
+
+        System.out.println("---" + hi + "---");
+        return ("");
+
+    }
+}
+
+
