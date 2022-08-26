@@ -16,6 +16,8 @@ public class Main {
 }
 
 
+
+
 import java.util.Random;
 
 class Main {
@@ -72,5 +74,30 @@ class Main {
 
         System.out.println("Random String is: " + randomString);
 
+    }
+}
+
+
+
+class Main {
+    public static void main(String[] args) {
+
+        /***
+         * Parašykite funkciją, kuri skaičiuotų, ir gražintų iš kiek sveikų skaičių jos argumentas dalijasi be liekanos (išskyrus vienetą ir patį save).
+         */
+
+        System.out.println(division(12));
+
+    }
+
+    public static int division(int num){
+
+        int count = 0;
+        for (int i = 2; i <= num / 2; i++) {
+            if(num % i == 0){
+                count++;
+            }
+        }
+            return count;
     }
 }
