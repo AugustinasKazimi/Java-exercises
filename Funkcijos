@@ -104,3 +104,47 @@ class Main {
             return count;
     }
 }
+
+
+
+class Main {
+    public static void main(String[] args) {
+
+        /***
+         * Sugeneruokite masyvą iš 100 elementų, kurio reikšmės atsitiktiniai skaičiai nuo 33 iki 77.
+         * Išrūšiuokite masyvą pagal daliklių be liekanos kiekį mažėjimo tvarka, panaudodami trečio uždavinio funkciją.
+         */
+
+        int[] masyvas = arr(5);
+        int[] liekana = division(arr());
+
+//        System.out.println(arr(5)); //kodel kai naudojame printa tai mums prie rezultato dar ismeta [I@4dd8dc3?
+//
+//        System.out.println(division(10));
+
+    }
+
+    public static int[] arr(int number) {
+
+
+        int[] array = new int[100];
+        for (int i = 1; i <= number; i++) {
+            int random = (int) (33 + Math.round(Math.random() * (77 - 33) + 1));
+            array[i] = random;
+            System.out.println(array[i]);
+        }
+        return array;
+    }
+
+    public static int division(int[] array) {
+
+        int count = 0;
+
+        for (int i = 2; i <= arr; i++) {
+            if (num % i == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
