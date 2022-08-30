@@ -144,3 +144,34 @@ class Main {
         return count;
     }
 }
+
+
+
+class Main {
+    public static void main(String[] args) {
+
+        /***
+         * Sukurkite Funkciją kuri sugeneruotų 5 elementų masyvą ir jį gražintų.
+         */
+        int[] array = generateOfArr(5); //int[] array mes pasidarėm tam, kad mum reikės gauti rezultatą, kuris yra masyvas. po lygu mes parašėm, kad int[] array yra 
+                                        lygus įvykdytai funkcijai generateOfArr
+                                        //kuriai mes paduosim 5 elementus masyvui.
+                                        //deklaruoji kintamaji 'array' -> nurodai kad jis saugos reiksme grazinta is funkcijos generateOfArray -> 
+                                        is karto po to kreipiamasi i funkcija ->
+                                        // funkcija kazka paskaiciuoja ir daro return result; -> griztama i pagrindini koda ir vykdoma toliau programa 
+                                        su kazkokiais duomenim kintamajam 'array'
+
+        System.out.println("Masyvai yra: " + );
+
+    }
+
+    public static int[] generateOfArr(int number){
+        int[] result = new int[number]; //čia susikūrėm kintamąjį, kur deklaruosim rezultatą. new int [] skliausteliuose turi būti toks masyvas, 
+        kokį padavinėjom mes funkcijai.
+
+        for (int i = 0; i < number; i++) {
+            result[i] = i;
+        }
+        return result;
+    }
+}
