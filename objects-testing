@@ -1,0 +1,76 @@
+public class Plant {
+
+    private String name;
+    private String nameInLatin;
+    private Boolean isAnnual;
+    private String theContinent;
+    private Double height;
+    private Boolean isEatable;
+
+    public Plant() {
+
+    }
+
+    public Plant(String name, String nameInLatin, Boolean isAnnual, String theContinent, Double height, Boolean isEatable) {
+        this.name = name;
+        this.nameInLatin = nameInLatin;
+        this.isAnnual = isAnnual;
+        this.theContinent = theContinent;
+        this.height = height;
+        this.isEatable = isEatable;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String nameOfPlant) {
+        this.name = nameOfPlant;
+    }
+
+    public String getNameInLatin() {
+        return this.nameInLatin;
+    }
+
+    public void setNameInLatin(String latinNameOfPlant) {
+        this.nameInLatin = latinNameOfPlant;
+    }
+
+    public Boolean getIsAnnual() {
+        return this.isAnnual;
+    }
+
+    public void setIsAnnual(Boolean plantIsAnnual) {
+        this.isAnnual = plantIsAnnual;
+    }
+
+    public String getTheContinent() {
+        return this.theContinent;
+    }
+
+    public void setTheContinent(String plantContinent) {
+        this.theContinent = plantContinent;
+    }
+
+    public Double getHeight() {
+        return this.height;
+    }
+
+    public void setHeight(Double plantHeight) {
+        this.height = plantHeight;
+    }
+
+    public Boolean getIsEatable() {
+        return this.isEatable;
+    }
+
+    public void setIsEatable(Boolean plantIsEatable) {
+        this.isEatable = plantIsEatable;
+    }
+
+    public String toString() {
+        return "Plant {" + "name is'" + name + '\'' + ", name in Latin' " + nameInLatin + '\'' + ", usually' " + isAnnual + '\'' + ". You can find this plant in" + theContinent + '\'' + ". Moreover, this plant can grow' " + height + '\'' + ", but encyclopedia says that it is' " + isEatable + '\'' + '}';
+    }
+
+
+}
