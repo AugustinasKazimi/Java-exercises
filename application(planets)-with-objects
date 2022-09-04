@@ -1,0 +1,155 @@
+MAIN.java
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Sveiki atvyke i Drakonu kovu enciklopedija! \n");
+
+        boolean shouldContinue = true;
+        Scanner sc = new Scanner(System.in);
+
+        Planet pl1 = new Planet("The Earth", true, 796);
+        Planet pl2 = new Planet("Planet Vegeta", false, 737);
+        Planet pl3 = new Planet("Namek", true, 796);
+
+        ArrayList<Planet> planets = new ArrayList<>();
+        planets.add(pl1);
+        planets.add(pl2);
+        planets.add(pl3);
+
+        while (shouldContinue){
+            menu();
+            int opt = sc.nextInt();
+            sc.nextLine();
+
+            switch (opt) {
+                case 0:
+                    System.out.println("Thank you for using our application!");
+                    shouldContinue = false;
+                    break;
+                case 1:
+                    System.out.println("Printing the planets");
+                    printPlanets(planets);
+                    break;
+                case 2:
+                    System.out.println("Type in the planet name you would like to add to the list." +
+                            "If planet still exists type 'true', otherwise 'false'. Then type in the age of the planet");
+                    addPlanet(sc, planets);
+                    break;
+                case 3:
+                    System.out.println("Choose the number of the planet you would like to delete from the list");
+                    printPlanets(planets);
+                    removePlanet(sc, planets);
+                    break;
+                case 4:
+                    System.out.println("Choose the number of the planet you would like to edit");
+                    editPlanets(sc, planets);
+                    break;
+                default:
+                    System.out.println("Did you really choose the correct number?");
+            }
+        }
+    }
+    public static void menu(){
+            System.out.println("If you want to see a list of the plants, press 1.");
+            System.out.println("If you want to add a new planet, press 2.");
+            System.out.println("If you want to delete the planet, press 3");
+            System.out.println("If you want to edit the planet, press 4.");
+            System.out.println("If you want to quit the application, press 0.");
+    }
+    public static void printPlanets(ArrayList <Planet> arr){
+            for (int i = 0; i < arr.size(); i++) {
+                System.out.println(i + 1 + ". " + arr.get(i));
+            }
+            System.out.println("");
+    }
+    public static void addPlanet(Scanner sc, ArrayList<Planet> arr){
+        String planetName = sc.nextLine();
+        boolean doesExist = Boolean.parseBoolean(sc.nextLine()); //kintamojotipas.valueof leidzia pakeisti i toki kintamojo tipa, koks yra pries valueof
+        int age = Integer.parseInt(sc.nextLine());
+
+        Planet pl = new Planet(planetName, doesExist, age);
+        arr.add(pl);
+
+        System.out.println("");
+    }
+
+    public static void removePlanet(Scanner sc, ArrayList<Planet> arr){
+        arr.remove(sc.nextInt() -1);
+        sc.nextLine();
+        System.out.println("");
+    }
+
+    public static void editPlanets(Scanner sc, ArrayList<Planet> arr){
+        printPlanets(arr);
+
+        int nr = sc.nextInt();
+        sc.nextLine();
+        System.out.println("You will edit the planet called - " + arr.get(nr - 1) + "." + "Type in new planet name " +
+                ", if planet exists type in 'true', otherwise 'false' and age of the planet");
+
+        String planetName = sc.nextLine();
+        boolean doesExist = Boolean.parseBoolean(sc.nextLine()); //kintamojotipas.valueof leidzia pakeisti i toki kintamojo tipa, koks yra pries valueof
+        int age = Integer.parseInt(sc.nextLine());
+
+        Planet pl = arr.get( nr - 1 );
+        pl.setPlanetName(planetName);
+        pl.setStillThere(doesExist);
+        pl.setPlanetAge(age);
+        arr.set(nr - 1, pl);
+
+        System.out.println("");
+    }
+}
+
+
+Planet.java
+
+public class Planet {
+    private String planetName;
+    private Boolean isStillThere;
+    private Integer planetAge;
+
+    public Planet(String planetName, Boolean isStillThere, Integer planetAge){
+        this.planetName = planetName;
+        this.isStillThere = isStillThere;
+        this.planetAge = planetAge;
+    }
+
+    public String getPlanetName() {
+        return this.planetName;
+    }
+
+    public void setPlanetName(String nameOfPlanet) {
+        this.planetName = nameOfPlanet;
+    }
+
+    public Boolean getStillThere() {
+        return this.isStillThere;
+    }
+
+    public void setStillThere(Boolean doesExist) {
+        this.isStillThere = doesExist;
+    }
+
+    public Integer getPlanetAge() {
+        return this.planetAge;
+    }
+
+    public void setPlanetAge(Integer ageOfPlanet) {
+        this.planetAge = ageOfPlanet;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Planet name is " + planetName + "." + " Planet " + ((isStillThere) ? "exists" : "does not exist")
+                + "." + " Planet age is/was " + planetAge;
+    }
+}
+
+
+
