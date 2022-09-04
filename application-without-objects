@@ -1,0 +1,81 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Sveiki atvyke i Drakonu kovu enciklopedija! \n");
+
+        boolean shouldContinue = true;
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> planets = new ArrayList<>(); //kaip zino kuri array listą paimti mūsų printPlanets paimti? pagal eiliskuma  sukurta?
+        planets.add("Nameku planeta");
+        planets.add("Zeme");
+        planets.add("Karaliaus Kajaus planeta");
+
+
+        while (shouldContinue){
+        menu();
+        int opt = sc.nextInt();
+        sc.nextLine();
+            switch (opt) {
+                case 0:
+                    System.out.println("Aciu, kad naudojates programa!");
+                    shouldContinue = false;
+                    break;
+                case 1:
+                    System.out.println("Spausdinu esancias planetas");
+                    printPlanets(planets);
+                    break;
+                case 2:
+                    System.out.println("Iveskite planeta, kuria noretumete prideti");
+                    addPlanet(sc, planets);
+                    break;
+                case 3:
+                    System.out.println("Pasirinkite skaiciu planetos, kuria noretumete istrinti is saraso");
+                    printPlanets(planets);
+                    removePlanet(sc, planets);
+                    break;
+                case 4:
+                    System.out.println("Pasirinkite planetos numeri, kuria norite redaguoti");
+                    editPlanets(sc, planets);
+                    break;
+                default:
+                    System.out.println("Ar tikrai gerai pasirinkote skaiciu?");
+            }
+        }
+    }
+public static void menu(){
+            System.out.println("Noredami pamatyti esancias planetas, spauskite 1.");
+            System.out.println("Noredami prideti planeta, spauskite 2.");
+            System.out.println("Noredami istrinti planeta, spauskite 3.");
+            System.out.println("Noredami redaguoti planetos pavadinima, spauskite 4.");
+            System.out.println("Noredami iseiti is programos, spauskite 0.");
+        }
+
+public static void printPlanets(ArrayList <String> arr){
+            for (int i = 0; i < arr.size(); i++) {
+                System.out.println(i + 1 + ". " + arr.get(i));
+            }
+            System.out.println("");
+        }
+public static void addPlanet(Scanner sc, ArrayList<String> arr){
+        arr.add(sc.nextLine());
+        System.out.println("");
+}
+
+public static void removePlanet(Scanner sc, ArrayList<String> arr){
+        arr.remove(sc.nextInt() -1);
+        sc.nextLine();
+        System.out.println("");
+}
+
+public static void editPlanets(Scanner sc, ArrayList<String> arr){
+        printPlanets(arr);
+        int nr = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Jus redaguosite planeta pavadinimu - " + arr.get(nr - 1) + "." + " Iveskite nauja planetos pavadinima");
+        arr.set(nr - 1, sc.nextLine());
+        System.out.println("");
+}
+    }
