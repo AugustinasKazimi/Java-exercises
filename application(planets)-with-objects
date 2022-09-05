@@ -1,12 +1,10 @@
-MAIN.java
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Sveiki atvyke i Drakonu kovu enciklopedija! \n");
+        System.out.println("Welcome to the Dragon ball encyclopedia! \n");
 
         boolean shouldContinue = true;
         Scanner sc = new Scanner(System.in);
@@ -72,10 +70,23 @@ public class Main {
         int age = Integer.parseInt(sc.nextLine());
 
         Planet pl = new Planet(planetName, doesExist, age);
-        arr.add(pl);
 
+        System.out.println(arr.contains(pl));
+
+        boolean isPlanet = false;
+        for (int i = 0; i <arr.size(); i++) {
+            if(arr.get(i).getPlanetName() == pl.getPlanetName()){
+                isPlanet = true;
+            }
+        }
+        if (isPlanet){
+            arr.add(pl);
+        }
         System.out.println("");
     }
+
+
+
 
     public static void removePlanet(Scanner sc, ArrayList<Planet> arr){
         arr.remove(sc.nextInt() -1);
@@ -104,52 +115,3 @@ public class Main {
         System.out.println("");
     }
 }
-
-
-Planet.java
-
-public class Planet {
-    private String planetName;
-    private Boolean isStillThere;
-    private Integer planetAge;
-
-    public Planet(String planetName, Boolean isStillThere, Integer planetAge){
-        this.planetName = planetName;
-        this.isStillThere = isStillThere;
-        this.planetAge = planetAge;
-    }
-
-    public String getPlanetName() {
-        return this.planetName;
-    }
-
-    public void setPlanetName(String nameOfPlanet) {
-        this.planetName = nameOfPlanet;
-    }
-
-    public Boolean getStillThere() {
-        return this.isStillThere;
-    }
-
-    public void setStillThere(Boolean doesExist) {
-        this.isStillThere = doesExist;
-    }
-
-    public Integer getPlanetAge() {
-        return this.planetAge;
-    }
-
-    public void setPlanetAge(Integer ageOfPlanet) {
-        this.planetAge = ageOfPlanet;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Planet name is " + planetName + "." + " Planet " + ((isStillThere) ? "exists" : "does not exist")
-                + "." + " Planet age is/was " + planetAge;
-    }
-}
-
-
-
